@@ -1,8 +1,4 @@
-<%-- 
-    Document   : loginAdminProcess
-    Created on : Apr 8, 2025, 1:22:22 AM
-    Author     : pragy
---%>
+
 
 <%@ page import="java.net.*, java.io.*, java.nio.charset.StandardCharsets, org.json.JSONObject" %>
 <%@ page import="java.sql.*" %>
@@ -23,7 +19,7 @@
 
     if (gRecaptchaResponse != null && !gRecaptchaResponse.trim().isEmpty()) {
         try {
-            String secretKey = "6LfLywMrAAAAALxcoC20JRikgpjuj686wlcIjRoS"; 
+            String secretKey = ""; 
             String verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
             String postParams = "secret=" + URLEncoder.encode(secretKey, "UTF-8") +
                                 "&response=" + URLEncoder.encode(gRecaptchaResponse, "UTF-8");

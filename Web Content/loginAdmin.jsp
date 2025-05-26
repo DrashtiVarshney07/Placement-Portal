@@ -14,8 +14,8 @@
         boolean captchaVerified = false;
 
         try {
-            String secretKey = "6LfLywMrAAAAALxcoC20JRikgpjuj686wlcIjRoS";
-            String verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
+            String secretKey = "";
+            String verifyUrl = "";
             String postParams = "secret=" + secretKey + "&response=" + gRecaptchaResponse;
 
             URL obj = new URL(verifyUrl);
@@ -260,7 +260,7 @@
                 <input type="text" name="txtuid" placeholder="Enter User ID" required />
                 <input type="password" name="txtpwd" placeholder="Enter Password" required />
                 <div id="captcha-container" class="g-recaptcha"
-                    data-sitekey="6LfLywMrAAAAAEgrmdxna2K0PkVvgE0gU5rQwjWU"
+                    data-sitekey=""
                     data-callback="onCaptchaSuccess">
                </div>
                 <p id="captcha-error" style="color:red; display:none;">Please verify the captcha.</p>
@@ -295,7 +295,7 @@
 
             window.onload = function () {
                 grecaptcha.render('captcha-container', {
-                    'sitekey': '6LfLywMrAAAAAEgrmdxna2K0PkVvgE0gU5rQwjWU',
+                    'sitekey': '',
                     'callback': onCaptchaSuccess
                 });
             };

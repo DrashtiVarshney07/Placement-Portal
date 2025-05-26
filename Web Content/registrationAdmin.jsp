@@ -239,7 +239,7 @@
             <label for="profilePic">Profile Picture:</label>
             <input type="file" name="profilePic" accept="image/*" required>
 
-            <div class="g-recaptcha" data-sitekey="6LfLywMrAAAAAEgrmdxna2K0PkVvgE0gU5rQwjWU"></div>
+            <div class="g-recaptcha" data-sitekey=""></div>
             <p id="captcha-error" style="color:red; display:none;">Please verify the captcha.</p>
 
             <input type="submit" id="registerBtn" value="Register" disabled />

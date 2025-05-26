@@ -1,8 +1,4 @@
-<%-- 
-    Document   : registerAdminProcess
-    Created on : Apr 8, 2025, 12:39:43 AM
-    Author     : pragy
---%>
+
 
 <%@ page import="java.io.*, java.util.*, java.sql.*, java.nio.charset.StandardCharsets" %>
 <%@ page import="org.apache.commons.fileupload.*, org.apache.commons.fileupload.disk.*, org.apache.commons.fileupload.servlet.*" %>
@@ -59,7 +55,7 @@ out.println("Content type: " + request.getContentType());
     boolean captchaSuccess = false;
     String Captcharesponse = "";
     try {
-        String secret = "6LfLywMrAAAAALxcoC20JRikgpjuj686wlcIjRoS";
+        String secret = "";
         String url = "https://www.google.com/recaptcha/api/siteverify";
         String postData = "secret=" + secret + "&response=" + captchaToken;
 

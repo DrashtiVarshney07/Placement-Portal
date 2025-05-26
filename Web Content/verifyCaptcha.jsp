@@ -1,8 +1,4 @@
-<%-- 
-    Document   : verifyCaptcha
-    Created on : Mar 29, 2025, 11:46:02 PM
-    Author     : pragy
---%>
+
 
 <%@page import="java.net.*, java.io.*, java.nio.charset.StandardCharsets, org.json.JSONObject"%>
 <%
@@ -10,7 +6,7 @@
     boolean captchaSuccess = false;
 
     if (gRecaptchaResponse != null && !gRecaptchaResponse.isEmpty()) {
-        String secretKey = "6LfLywMrAAAAALxcoC20JRikgpjuj686wlcIjRoS"; // Your secret key
+        String secretKey = ""; // Your secret key
         String verificationUrl = "https://www.google.com/recaptcha/api/siteverify";
 
         try {
